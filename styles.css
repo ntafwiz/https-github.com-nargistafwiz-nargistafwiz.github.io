@@ -1,7 +1,7 @@
 /* === Global Styles === */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec); /* subtle gradient background */
+  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
   color: #333;
   margin: 0;
   padding: 0 1rem;
@@ -76,6 +76,21 @@ ul {
 
 li {
   margin-bottom: 0.6rem;
+}
+
+/* === Project Cards === */
+.project-card {
+  background: #fefefe;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 /* === Visitor Counter === */
