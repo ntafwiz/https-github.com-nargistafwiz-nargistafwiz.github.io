@@ -1,7 +1,7 @@
 /* === Global Styles === */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f4f7f9;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec); /* subtle gradient background */
   color: #333;
   margin: 0;
   padding: 0 1rem;
@@ -11,46 +11,57 @@ body {
 a {
   color: #007acc;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 a:hover {
+  color: #00bfff;
   text-decoration: underline;
 }
 
 /* === Header === */
 header {
   text-align: center;
-  padding: 3rem 1rem 2rem 1rem;
+  padding: 4rem 1rem 3rem 1rem;
   background: linear-gradient(to right, #007acc, #00bfff);
   color: white;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  letter-spacing: 1px;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-top: 0.5rem;
   font-weight: 300;
 }
 
 /* === Sections === */
 section {
-  max-width: 900px;
+  max-width: 950px;
   margin: 2rem auto;
   background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
 }
 
 section h2 {
-  border-bottom: 2px solid #007acc;
+  border-bottom: 3px solid #007acc;
   padding-bottom: 0.5rem;
   color: #007acc;
+  margin-bottom: 1rem;
 }
 
 section h3 {
@@ -60,11 +71,11 @@ section h3 {
 
 /* === Lists === */
 ul {
-  padding-left: 1.2rem;
+  padding-left: 1.5rem;
 }
 
 li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
 /* === Visitor Counter === */
@@ -72,29 +83,46 @@ li {
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
-  background: #e3f2fd;
-  border-radius: 10px;
-  padding: 1.5rem;
+  background: #e6f0fa;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 /* === Footer === */
 footer {
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem 1rem;
   font-size: 0.9rem;
-  color: #666;
+  color: #555;
   border-top: 1px solid #ddd;
+  background: #f8f9fa;
+}
+
+/* === Buttons / Links in Projects (Optional Enhancement) === */
+section a {
+  background: #007acc;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+
+section a:hover {
+  background: #00bfff;
 }
 
 /* === Responsive === */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   header h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   section {
     margin: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
   }
 }
+
 
